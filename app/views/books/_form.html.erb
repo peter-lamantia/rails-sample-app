@@ -12,6 +12,21 @@
   <% end %>
 
   <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :author, style: "display: block" %>
+    <%= form.text_field :author %>
+  </div>
+
+  <div>
+    <%= form.label :publication_year, style: "display: block" %>
+    <%= form.number_field :publication_year %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
